@@ -2,11 +2,13 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>ElectronJS POC</title>
+    <script src="main-window.js"></script>
+    <title>ElectronJS POC</title>    
   </head>
   <body>
     <h1>ElectronJS POC</h1>
-
-
+    <input type="button" id="btn-upload-zip-file" value="Upload zip file" onclick="uploadZipFile()" />
+    <input type="button" id="btn-extract-zip-file" value="Extract and explore zip file" onclick="extractAndExploreZipFile()" />
+    <div id="output"></div>
   </body>
 </html>
