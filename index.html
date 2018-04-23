@@ -9,6 +9,17 @@
     <h1>ElectronJS POC</h1>
     <input type="button" id="btn-upload-zip-file" value="Upload zip file" onclick="uploadZipFile()" />
     <input type="button" id="btn-extract-zip-file" value="Extract and explore zip file" onclick="extractAndExploreZipFile()" />
+    <div>
+        <form method="post" enctype="multipart/form-data">
+            <div>
+            <label for="file">Choose file to upload</label>
+            <input type="file" id="file" name="file" multiple>
+            </div>
+            <div>
+            <input type="submit"/>
+            </div>
+        </form>
+    </div>
     <div id="output"></div>
   </body>
 </html>
